@@ -1,0 +1,43 @@
+ <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Vote Tanusha!</title>
+  </head>
+  <body onresize="resizeToMax()" style="overflow:hidden; background-color: black;">
+      
+<div id="ddd" style="width: 100%; height: 100%;">
+    <video id="TG" autoplay src="TanushaGoldstein.mp4" id="myVideo">
+        Your browser doesn't support video. Haha sucks to be you lol
+    </video>
+</div>
+
+    <script>
+        
+        setInterval(resizeToMax, 500);
+        
+        function resizeToMax(){
+            var v = document.getElementById("TG");
+            var r;
+
+            r = (v.clientWidth / (window.innerWidth - 16));
+            v.style.width = Math.round(v.clientWidth / r) + "px";
+             v.style.height = Math.round(v.clientHeight / r) + "px";
+
+
+            r = v.clientHeight / (window.innerHeight - 16);
+             v.style.width = Math.round(v.clientWidth / r) + "px";
+             v.style.height = Math.round(v.clientHeight / r) + "px";
+            
+            if(TG.clientWidth > window.innerWidth){
+                r = (v.clientWidth / (window.innerWidth - 16));
+            v.style.width = Math.round(v.clientWidth / r) + "px";
+             v.style.height = Math.round(v.clientHeight / r) + "px";
+            }
+            
+            ddd.style.paddingLeft = ((window.innerWidth - 16 - TG.clientWidth) / 2) + "px";
+            ddd.style.paddingTop = ((window.innerHeight - 16 - TG.clientHeight) / 2) + "px";
+        }
+    </script>
+  </body>
+</html>
