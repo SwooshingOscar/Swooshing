@@ -30,13 +30,14 @@
 
     <script>
         
-        setTimeout(function(){
-        r = document.getElementById("TG").clientHeight / (window.innerHeight / 2);
-        document.getElementById("TG").style.height = (document.getElementById("TG").clientHeight / r) + "px";
+     document.addEventListener('DOMContentLoaded', function() {
+    r = document.getElementById("TG").clientHeight / (window.innerHeight / 2);
+        document.getElehttps://github.com/SwooshingOscar/SwooshingOscar.github.io/settingsmentById("TG").style.height = (document.getElementById("TG").clientHeight / r) + "px";
        // document.getElementById("TG").style.width = (document.getElementById("TG").clientWidth / r) + "px";
         document.getElementById("ddd").style.paddingLeft = ((window.innerWidth - document.getElementById("TG").clientWidth) / 2) + "px";
         document.getElementById("bbb").style.paddingLeft = ((window.innerWidth - document.getElementById("bbb").clientWidth) / 2) + "px";
-        }, 250);
+}, false);
+     
             
     </script>
   </body>
